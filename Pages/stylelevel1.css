@@ -1,0 +1,9 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(7, 2, 33);
+    color: white;
+    background-image: url(imagesIndex/star\ bg.png);
+    background-size: auto;
+    text-align: center;
+}
