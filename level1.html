@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylelevel1.css">
+    <title>Level 1</title>
+</head>
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+        background-color: rgb(7, 2, 33);
+        color: white;
+        background-image: url(stars-bg.jpeg);
+        background-size: auto;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    .text {
+        background-color: rgba(50, 0, 157, 0.326);
+        padding: 10px;
+        margin: auto;
+        width: 600px;
+        border-radius: 10px;
+        font-family: sans-serif;
+        text-align: justify center;
+    }
+
+    button {
+        border: none;
+        background-color: lightblue;
+        padding: 20px;
+        color: darkblue;
+        border-radius: 20px;
+        box-shadow: 3px 3px 1px white;
+        margin-top: 3%;
+    }
+
+    button a {
+        text-decoration: none;
+    }
+
+    .box {
+        position: relative;
+        padding: 10px;
+        width: 400px;
+        height: 400px;
+        margin: auto;
+        margin: 100px;
+        background-color: black;
+        background-image: url(bg-for-levels.jpeg);
+        text-align: center;
+    }
+
+    .box::before,
+    .box::after {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        width: calc(100% + 20px);
+        height: calc(100% + 20px);
+        top: -11px;
+        left: -11px;
+        background: linear-gradient(45deg, red, orange, yellow, green, blue, blueviolet, deeppink, blueviolet, deeppink, red, orange, yellow, green, blue);
+        background-size: 300%;
+        animation: border 12s linear infinite;
+    }
+
+    .box::after {
+        filter: blur(50px);
+    }
+
+    @keyframes border {
+
+        0%,
+        100% {
+            background-position: 0 0;
+        }
+
+        50% {
+            background-position: 300%;
+        }
+    }
+
+    footer {
+        background-color: rgb(0, 0, 70);
+        margin-top: 5%;
+    }
+</style>
+
+<body>
+    <h1>LEVEL 1</h1>
+
+    <p class="text">
+        Commander Tom Lightyear has ordered the Astronauts, including a promising recruit, (_) who must prepare and
+        launch to space with available arms at the table. This will be your first time on duty, in service of the TSF,
+        to destroy all aliens out of this world.
+    </p>
+    <div class="box">
+
+    </div>
+
+    <p class="text">
+        the story after the level completion goes here....
+    </p>
+
+    <button>
+        <a href="level2.html">Continue...</a>
+    </button>
+
+    <footer>
+        @may2023Game made by Noor Zahra, Rhea, Patrick, Abdulhadi, and Obaidullah
+    </footer>
+</body>
+
+</html>

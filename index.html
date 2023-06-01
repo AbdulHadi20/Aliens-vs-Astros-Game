@@ -5,9 +5,129 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Pages/stylehomepage.css">
+    <link rel="stylesheet" href="stylehomepage.css">
     <title>Aliens vs Astros</title>
 </head>
+
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+        background-color: rgb(7, 2, 33);
+        color: white;
+        background-image: url(stars-bg.jpeg);
+        background-size: auto;
+        text-align: center;
+    }
+
+    header {
+        background-image: url(header-bg.jpeg);
+        background-size: auto;
+        padding: 5px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .intro {
+        background-color: rgba(0, 0, 163, 0.173);
+        background-image: url(bg-for-levels.jpeg);
+        width: 725px;
+        height: 340px;
+        padding: 4px;
+        border-radius: 3px;
+        box-shadow: -3px 3px 9px -1px rgba(215, 248, 255, 0.821), -12px 12px 13px rgba(0, 0, 139, 0.536);
+        margin-top: 40px;
+    }
+
+    .text {
+        background-color: rgba(50, 0, 157, 0.326);
+        padding: 10px;
+        margin: auto;
+        width: 600px;
+        border-radius: 10px;
+        font-family: sans-serif;
+    }
+
+    .box {
+        position: relative;
+        padding: 10px;
+        width: 400px;
+        height: 400px;
+        margin: auto;
+        margin: 100px;
+        background-color: black;
+        background-image: url(bg-for-levels.jpeg);
+        text-align: center;
+    }
+
+    .box::before,
+    .box::after {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        width: calc(100% + 20px);
+        height: calc(100% + 20px);
+        top: -11px;
+        left: -11px;
+        background: linear-gradient(45deg, red, orange, yellow, green, blue, blueviolet, deeppink, blueviolet, deeppink, red, orange, yellow, green, blue);
+        background-size: 300%;
+        animation: border 12s linear infinite;
+    }
+
+    .box::after {
+        filter: blur(50px);
+    }
+
+    @keyframes border {
+
+        0%,
+        100% {
+            background-position: 0 0;
+        }
+
+        50% {
+            background-position: 300%;
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        list-style: none;
+        justify-content: center;
+        text-align: center;
+    }
+
+    ul li {
+        padding: 20px;
+        margin-right: 10%;
+        margin-top: 10px;
+        border-radius: 20px;
+    }
+
+    ul li a {
+        text-decoration: none;
+        background-color: lightblue;
+        padding: 20px;
+        color: darkblue;
+        border-radius: 20px;
+    }
+
+    ul li a:hover {
+        background-color: cornflowerblue;
+    }
+
+
+    footer {
+        background-color: rgb(0, 0, 70);
+    }
+</style>
 
 <body>
     <header>
@@ -44,9 +164,9 @@
             <h3>Choose your difficulty level</h3>
 
             <ul>
-                <li><a href="Pages/level1.html">Level 1</a></li>
-                <li><a href="Pages/level2.html">Level 2</a></li>
-                <li><a href="Pages/level3.html">Level 3</a></li>
+                <li><a href="level1.html">Level 1</a></li>
+                <li><a href="level2.html">Level 2</a></li>
+                <li><a href="level3.html">Level 3</a></li>
             </ul>
         </div>
 
@@ -56,7 +176,7 @@
         @may2023Game made by Noor Zahra, Rhea, Patrick, Abdulhadi, and Obaidullah
     </footer>
 
-    <script src="Pages/index.js"></script>
+    <script src="index.js"></script>
 
 </body>
 
