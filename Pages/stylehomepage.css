@@ -3,13 +3,13 @@ body {
     margin: 0;
     background-color: rgb(7, 2, 33);
     color: white;
-    background-image: url(imagesIndex/star\ bg.png);
+    background-image: url(Multimedia/stars-bg.jpeg);
     background-size: auto;
     text-align: center;
 }
 
 header {
-    background-image: url(imagesIndex/header\ bg.gif);
+    background-image: url(Multimedia/header-bg.jpeg);
     background-size: auto;
     padding: 5px;
 }
@@ -23,7 +23,7 @@ main {
 
 .intro {
     background-color: rgba(0, 0, 163, 0.173);
-    background-image: url(imagesIndex/bg\ for\ levels.gif);
+    background-image: url(Multimedia/bg-for-levels.jpeg);
     width: 725px;
     height: 340px;
     padding: 4px;
@@ -49,7 +49,7 @@ main {
     margin: auto;
     margin: 100px;
     background-color: black;
-    background-image: url(imagesIndex/bg\ for\ levels.gif);
+    background-image: url(Multimedia/bg-for-levels.jpeg);
     text-align: center;
 }
 
